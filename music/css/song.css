@@ -1,0 +1,188 @@
+.song-message{
+    width: 100%;
+    height:40rem;
+    background-color: #fff;
+}
+.song-message-left{
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 5rem 0;
+}
+@keyframes rotate{
+    form{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.song-message-left img{
+    display: block;
+    width: 16rem;
+    height: 16rem;
+    margin: 0 auto;
+    border:3rem solid rgb(78, 76, 76);
+    border-radius: 50%;
+    /* animation: rotate 4s linear infinite; */
+}
+.rotate{
+    animation: rotate 4s linear infinite;
+}
+.song-message-right{
+    width: 70%;
+    height: 100%;
+    float: left;
+    padding:2rem 0;
+    position: relative;
+}
+.song-message-right a{
+    color: rgb(18, 128, 238);   
+}
+.song-message-right a:hover{
+    text-decoration: underline;
+}
+.song-name{
+    font-size: 24px;
+    margin-left: 6rem;
+    display: block;
+    margin-bottom: 2rem;
+}
+.song-name::after{
+    content: '单曲';
+    display: block;
+    padding: .4rem .6rem .4rem .7rem;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 0.3rem;
+    background-color: dodgerblue;
+    position: absolute;
+    top: 2rem;
+    left:0rem;
+}
+.song-name::before{
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 0rem;
+    border:1.01rem solid transparent;
+    border-left: 1rem solid dodgerblue;
+    position: absolute;
+    top:2rem;
+    left:3.2rem;
+}
+#song label{
+    font-size: 14px;
+    color: #999;
+}
+#song>span{
+    font-size: 14px;
+    color: rgb(6, 130, 212);
+}
+.lyric{
+    display:block;
+    width: 90%;
+    height: 350px;
+    color: #444;
+    border:1px solid #ccc;
+    overflow-y: scroll;
+}
+.lyric_text{
+    animation: lyric 60s linear;
+}
+@keyframes lyric{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-350px);
+    }
+}
+audio{
+    display: block;
+    width: 15rem;
+    height: 2rem;
+    margin:2rem 0;
+       
+}
+.comment{
+    width: 100%;
+    height: 100rem;
+    background-color: #fff;
+    padding: 0 4rem;
+}
+.comment-top{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    border-bottom: 2px solid dodgerblue;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 2rem;
+}
+.comment>textarea{
+    width: 100%;
+    background-color: #eee;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+.btn-comment{
+    padding: .3rem .7rem;
+    background-color: dodgerblue;
+    float: right;
+    color: #fff;
+}
+
+.comment>span{
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+.like{
+    color:lightblue;
+}
+.user-name{
+    width: 80%;
+    margin:1.5rem 0;
+    letter-spacing: 1px;
+}
+.blue{
+    color:rgb(20, 96, 238);
+}
+.content-left{
+    float: left;
+    width: 10rem;
+    color: rgb(179, 174, 174);
+    font-size: 12px;
+}
+.content-right{
+    float: right;
+    color: rgb(20, 96, 238);
+    font-size: 20px;
+}
+hr{
+    margin: 1rem 0;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    color: white;
+}
+input[type="checkbox"]:checked{
+    background-color: red;
+}
+

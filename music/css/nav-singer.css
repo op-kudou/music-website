@@ -1,0 +1,65 @@
+.container{
+    width: 100%;
+    height: 1000px;
+    border:1px solid #ccc;
+    background-color: #fff;
+}
+.container-left{
+    width: 25%;
+    height: 1000px;
+    background-color: #f3f1f1;
+    border-right: 1px solid #ccc;
+    padding: 50px 20px;
+    float: left;
+}
+.type{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.type>h2{
+    font-size: 20px;
+}
+.type ul{
+    width: 100%;
+}
+.type a{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.type a:hover{
+    text-decoration: underline;
+}
+.container-right{
+    width: 75%;
+    height: 900px;
+    background-color: #fff;
+    padding: 50px 40px;
+    float: right;
+}
+.title{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+    border-bottom: 2px solid dodgerblue;
+}
+.singer-box{
+    width: 100%;
+    height: 400px;
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.singer-pic{
+    width: 18%;
+    height: 160px;   
+}
+.singer-pic img{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}

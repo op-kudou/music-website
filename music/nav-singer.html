@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>海风音乐</title>
+<link rel="stylesheet" href="css/nav-singer.css">
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+      </div>
+      <div class="name">
+        海风音乐
+      </div>
+      <ul class="nav-ul">
+        <li>
+          <a href="#" class="active">发现音乐</a>
+        </li>
+        <li><a href="#">我的音乐</a></li>
+        <li><a href="#">朋友</a></li>
+        <li><a href="#">音乐人</a></li>
+        <li><a href="#">下载客户端</a></li>
+      </ul>
+      <form class="nav-form" method="POST">
+        <input type="text" class="search" id="songname" placeholder="恐怖">
+        <script>
+          var songname=document.getElementById("songname");
+          function fun(){
+            if(songname==1)
+            window.location.href='rank-list.html';
+          }         
+        </script>
+        <button class="btn" onclick="fun()">搜索</button>
+      </form>
+    </nav>
+  </header>
+  <div class="nav-top">
+    <ul class="nav-top-ul">
+      <li><a href="index.php">推荐</a></li>
+      <li><a href="rank-list.html">排行榜</a></li>
+      <li><a class="nav-top-active" href="#">歌手</a></li>
+    </ul>
+  </div>
+  <div class="content">
+      <div class="container">
+          <div class="container-left">
+            <div class="type">
+                <h2>推荐</h2>
+                <ul>
+                    <li><a>推荐歌手</a></li>
+                    <li><a>入驻</a></li>
+                </ul>
+            </div>
+            <div class="type">
+                <h2>华语</h2>
+                <ul>
+                    <li><a>华语男歌手</a></li>
+                    <li><a>华语女歌手</a></li>
+                    <li><a>华语组合/乐队</a></li>
+                </ul>
+            </div>
+            <div class="type">
+                <h2>欧美</h2>
+                <ul>
+                    <li><a>欧美男歌手</a></li>
+                    <li><a>欧美女歌手</a></li>
+                    <li><a>欧美组合/乐队</a></li>
+                </ul>
+            </div>
+            <div class="type">
+                <h2>日本</h2>
+                <ul>
+                    <li><a>日本男歌手</a></li>
+                    <li><a>日本女歌手</a></li>
+                    <li><a>日本组合/乐队</a></li>
+                </ul>
+            </div>
+            <div class="type">
+                <h2>韩国</h2>
+                <ul>
+                    <li><a>韩国男歌手</a></li>
+                    <li><a>韩国女歌手</a></li>
+                    <li><a>韩国组合/乐队</a></li>
+                </ul>
+            </div>
+            <div class="type">
+                <h2>其他</h2>
+                <ul>
+                    <li><a>其他男歌手</a></li>
+                    <li><a>其他女歌手</a></li>
+                    <li><a>其他组合/乐队</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="container-right">
+            <div class="title">入驻歌手</div>
+            <div class="singer-box">
+                <div class="singer-pic">
+                  <a href="singer-message.php?singer_name=米津玄师">
+                    <img src="images/singer-pic.PNG">
+                    米津玄师
+                  </a>
+                </div>
+                <div class="singer-pic">
+                  <a href="singer-message.php?singer_name=千菅春香">
+                    <img src="images/song/pary.jpg">
+                    千菅春香
+                  </a>
+                </div>
+                <div class="singer-pic">
+                  <a href="singer-message.php?singer_name=锄禾">
+                    <img src="images/cd_default.png">
+                    锄禾
+                  </a>
+                </div>
+                <div class="singer-pic">
+                  <a href="singer-message.php?singer_name=奇然">
+                    <img src="images/song/殿书.jpg">
+                    奇然
+                  </a>
+                </div>
+                <div class="singer-pic">
+                  <a href="singer-message.php?singer_name=晴愔">
+                    <img src="images/song/mjx.jpg">
+                    晴愔
+                  </a>
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer16.gif">
+                  吴莫愁
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer18.gif">
+                  洪启
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer19.gif">
+                  李霄云
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer20.gif">
+                  孙楠
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer17.jpg">
+                  老狼
+                </div>
+            </div>
+            <div class="title">热门歌手</div>
+            <div class="singer-box">
+                <div class="singer-pic">
+                    <img src="images/singer7.gif">
+                    隔壁老樊
+                </div>
+                <div class="singer-pic">
+                    <img src="images/singer8.gif">
+                    柏松
+                </div>
+                <div class="singer-pic">
+                    <img src="images/singer9.gif">
+                    薛之谦
+                </div>
+                <div class="singer-pic">
+                    <img src="images/singer10.gif">
+                    邓紫棋
+                </div>
+                <div class="singer-pic">
+                    <img src="images/singer11.gif">
+                    林俊杰
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer12.gif">
+                  陈奕迅
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer13.gif">
+                  许嵩
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer14.gif">
+                  王二浪
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer15.gif">
+                  颜人中
+                </div>
+                <div class="singer-pic">
+                  <img src="images/singer16.gif">
+                  吴莫愁
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="clear"></div>
+  <div class="bottom">
+    版权所有&copy;吴蕾-1821010127
+  </div>
+</body>
+</html>

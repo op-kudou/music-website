@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>歌手申请</title>
+<link rel="stylesheet" href="css/singer.css">
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+      </div>
+      <div class="name">
+        海风音乐
+      </div>
+      <ul class="nav-ul">
+        <li>
+          <a href="index.php">发现音乐</a>
+        </li>
+        <li><a href="#">我的音乐</a></li>
+        <li><a href="#">朋友</a></li>
+        <li><a href="#" class="active">音乐人</a></li>
+        <li><a href="#">下载客户端</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content">
+      <title>
+          
+      </title>
+    <div class="container">
+        <h1>歌手申请</h1>
+        <form action="singer.php">
+            <input type="text" name="name" placeholder="用户名">
+            <!-- <input type="password" name="" id=""> -->
+            <input type="text" name="pic" placeholder="请输入头像地址" >
+            <select name="type" id="">
+                <option value="日语">日语</option>
+                <option value="流行">流行</option>
+                <option value="爵士">爵士</option>
+                <option value="摇滚">摇滚</option>
+                <option value="古风">古风</option>
+                <option value="民谣">民谣</option>
+            </select><br><br>
+            <input type="radio" name="hid" id="a" value="男">男
+            <input type="radio" name="hid" id="a" value="女">女
+            <br>
+            <input class="btn-obtain" type="submit" value="提交">
+        </form>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="bottom">
+    版权所有&copy;吴蕾-1821010127
+  </div>
+</body>
+</html>

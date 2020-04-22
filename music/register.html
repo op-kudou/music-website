@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
+    <title>注册</title>
+</head>
+<script>
+    function login() {
+    if(pwd.value!=pwd2.value){
+        // alert("注册失败，两次密码不同");  
+        pwd1.value="";
+        pwd.value="";
+    }
+    else if(pwd.value==""||pwd2.value==""||username.value=="")
+        alert('用户名和密码不可为空');
+    else
+    {
+        alert('注册成功');
+        window.location.href="login.php";
+    }
+        
+}
+    </script>
+<body>
+   <div class="login">
+     <div class="login-top">
+         注册
+     </div>
+     <form action="../music/php/register.php" method="POST" name="form1">
+         <label>用户名：</label>
+         <input name="username" type="text" id="username" maxlength="8"><br>
+         <label>密码：</label>
+         <input name="pwd" type="password" id="pwd" maxlength="16"><br>
+         <label>确认密码：</label>
+         <input name="pwd2" type="password" id="pwd2" maxlength="16"><br>
+         <div class="btn-group">
+            <input name="button" type="submit" onclick="login()">
+            <input id="res" type="reset" value="取消">            
+         </div> 
+         <script>
+             var res = document.getElementById('res');
+             res.onclick = function()
+             {
+                window.location.href = 'login.php';
+             }
+         </script>       
+     </form>
+   </div> 
+</body>
+</html>
+
+<!-- 
+    <?php 
+echo 'hhhh';
+	$id=$_POST['username'];
+	$name=$_POST['pwd'];
+	$age=$_POST['pwd1'];
+	$con=mysql_connect('localhost','root','root');
+	mysql_select_db("music",$con);
+	$sql="create table user(
+	id char(4) not null primary key,
+	name varchar(20) not null,
+	age int
+	)";
+	mysql_query($sql,$con);
+	$insert="insert into user values('$id','$name','$age')";
+	if(mysql_query($insert,$con))
+		echo 'success';
+	else 
+		echo 'fail';
+?>
+ -->

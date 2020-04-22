@@ -1,0 +1,81 @@
+.content{
+    border-top: 4px solid dodgerblue;
+    text-align: center;
+    vertical-align: top;
+    /* height: 700px; */
+}
+form{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+}
+.content .box{
+    width: 60%;
+    height: auto;
+    margin: 0 20%;
+    font-size: 20px;
+    padding: 50px 0;
+}
+.content .box input{
+    width: 300px;
+    height: 50px;
+    padding-left:20px ;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.content .box #lyric{
+    width: 300px;
+    margin-left: 20px;
+    vertical-align: top;
+    padding-left: 20px;
+    font-size: 16px;
+}
+#u_name{
+    width: 30%;
+    height: 4rem;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    margin-top:20px;
+    padding:10px 20px;
+    font-size: 18px;
+    appearance: none;
+}
+#submit{
+    width: 10%;
+    height: 3.5rem;
+    border: 1px solid dodgerblue;
+    background-color: #fff;
+    border-radius: 20px;
+    margin:20px 0 0 10px;
+    font-size: 18px;
+    appearance: none;
+}
+.content table{
+    margin: 20px 25%;
+    width: 50%;
+}
+.content table td{
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+}
+.content .form button,
+.add{
+    width: 10%;
+    height: 4rem;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: #fff;
+}
+.content .form label{
+    font-size: 20px;
+    display: block;
+    height: 50px;
+    margin-top: 50px;
+}
